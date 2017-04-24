@@ -15,53 +15,98 @@
 
   </head>
   <body>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="navbar-header">
+			 
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+			</button> <a class="navbar-brand" href="#">Audit</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li>
+					<a href="./vue-generale.html">Vue Générale</a>
+				</li>
+				<li>
+					<a href="./accueil-auditeurs.html">Auditeurs</a>
+				</li>
+				<li class="active">
+					<a href="#">Junior</a>
+				</li>
+				<li class="dropdown">
+					 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gestion des audits<strong class="caret"></strong></a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="./relance.html">Relance</a>
+						</li>
+						<li>
+							<a href="./staffing.html">Staffing</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<img height="50px" src="img/CNJE.png"/>
+				</li>
+			</ul>
+		</div>
+	</nav>
 
     <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
-			<nav class="navbar navbar-default" role="navigation">
-				<div class="navbar-header">
-					 
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-					</button> <a class="navbar-brand" href="#">Audit</a>
-				</div>
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
+		<div class="row">
+			<div class="col-md-12">
+				
+				<div class="btn-group">
+					<button class="btn btn-default">
+						 Rechercher une Junior	
+					</button> 
+					<button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
 						<li>
-							<a href="./vue-generale.html">Vue Générale</a>
+							<a href="#">ETIC INSA</a>
 						</li>
 						<li>
-							<a href="./accueil-auditeurs.html">Auditeurs</a>
+							<a href="#">Skema Lille</a>
 						</li>
-						<li class="active">
-							<a href="./accueil-juniors.html">Junior</a>
-						</li>
-						<li class="dropdown">
-							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gestion des audits<strong class="caret"></strong></a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="./relance.html">Relance</a>
-								</li>
-								<li>
-									<a href="./staffing.html">Staffing</a>
-								</li>
-							</ul>
+						<li>
+							<a href="#">Junior ESC Grenoble</a>
 						</li>
 					</ul>
-					<ul class="nav navbar-nav navbar-right">
-						<li>
-							<img height="50px" src="img/CNJE.png"/>
-						</li>
-					</ul>
+					<text/>
+					<button type="button" class="btn btn-default" style="float: right;" id="button-recherche">
+						<a href="./junior.html">Rechercher</a>
+					</button>
 				</div>
-			</nav>
+				<button type="button" class="btn btn-default" style="float: right;">
+					Ajouter une Junior
+				</button>
+			</div>
+		</div>
+		<hr/>
+			
+			
+		<div class="row">
+			<div class="col-md-2">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+			<div class="col-md-5">
+				<canvas id="chartOrga"></canvas>
+			</div>
+			<div class="col-md-5">
+				<canvas id="chartTreso"></canvas>
+			</div>
 		</div>
 	</div>
-</div>
+	<script src="../node_modules/chart.js/dist/Chart.bundle.js"></script>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+	<script src="js/auditeurs.js"></script>
   </body>
 </html>

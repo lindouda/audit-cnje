@@ -7,5 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lindouda/audit-cnje"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^2.5.0"
+  }
 }

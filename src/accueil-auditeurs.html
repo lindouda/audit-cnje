@@ -56,15 +56,57 @@
     <div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12">
-				<canvas id="myChart"></canvas>
+				
+				<div class="btn-group">
+					<button class="btn btn-default">
+						 Rechercher un auditeur	
+					</button> 
+					<button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="#">Jean-Michel Tréso</a>
+						</li>
+						<li>
+							<a href="#">Auditeur Tréso</a>
+						</li>
+						<li>
+							<a href="#">Auditeur Orga</a>
+						</li>
+					</ul>
+					<text/>
+					<button type="button" class="btn btn-default" style="float: right;" id="button-recherche">
+						<a href="./auditeur.html">Rechercher</a>
+					</button>
+				</div>
+				<button type="button" class="btn btn-default" style="float: right;">
+					Ajouter un auditeur
+				</button>
+			</div>
+		</div>
+		<hr/>
+			
+			
+		<div class="row">
+			<div class="col-md-2">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+			<div class="col-md-5">
+				<canvas id="chartOrga"></canvas>
+			</div>
+			<div class="col-md-5">
+				<canvas id="chartTreso"></canvas>
 			</div>
 		</div>
 	</div>
+	<script src="../node_modules/chart.js/dist/Chart.bundle.js"></script>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
 	<script src="js/auditeurs.js"></script>
-	<script src="js/Charts.js"></script>
   </body>
 </html>

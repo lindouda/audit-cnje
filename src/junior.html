@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Audit</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="navbar-header">
+			 
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+			</button> <a class="navbar-brand" href="#">Audit</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li>
+					<a href="./vue-generale.html">Vue Générale</a>
+				</li>
+				<li>
+					<a href="./accueil-auditeurs.html">Auditeurs</a>
+				</li>
+				<li class="active">
+					<a href="#">Junior</a>
+				</li>
+				<li class="dropdown">
+					 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gestion des audits<strong class="caret"></strong></a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="./relance.html">Relance</a>
+						</li>
+						<li>
+							<a href="./staffing.html">Staffing</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<img height="50px" src="img/CNJE.png"/>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+    <div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				
+				<div class="btn-group">
+					<button class="btn btn-default">
+						 Rechercher une Junior	
+					</button> 
+					<button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="#">ETIC INSA</a>
+						</li>
+						<li>
+							<a href="#">Skema Lille</a>
+						</li>
+						<li>
+							<a href="#">Junior ESC Grenoble</a>
+						</li>
+					</ul>
+					<text/>
+					<button type="button" class="btn btn-default" style="float: right;" id="button-recherche">
+						<a href="./junior.html">Rechercher</a>
+					</button>
+				</div>
+				<button type="button" class="btn btn-default" style="float: right;">
+					Ajouter une Junior
+				</button>
+			</div>
+		</div>
+		<hr/>
+			
+	
+		<div class="row">
+			<div class="col-md-4">
+				<div class="thumbnail" id="background">
+					<h3 id="title-junior">
+						Fiche Junior
+					</h3>
+					<div class="caption">
+						<p>
+							<hr/>
+							<text style="float: left;">Nom</text>
+							<text style="float: right;" id="field">ETIC INSA Technologies</text>
+							<br/>
+							<text style="float: left;">Mail</text>
+							<text style="float: right;" id="field">etic@insa-lyon.org</text>
+							<br/>
+							<text style="float: left;">Type</text>
+							<text style="float: right;" id="field">J.E.</text>
+							<br/>
+							<text style="float: left;">Passation</text>
+							<text style="float: right;" id="field">21 mars</text>
+							<br/>
+							<text style="float: left;">Date audit</text>
+							<text style="float: right;" id="field">01/04/2017</text>
+							<br/>
+						</p>
+					</div>
+					
+					<button type="button" class="btn btn-default">
+						<a href="./junior.html">Modifier</a>
+					</button>
+					<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal" style="float: right;">
+						Supprimer
+					</button>
+				</div>
+				
+				<div class="thumbnail" id="background">
+					<h3 id="title-junior">
+						Historique
+					</h3>
+					<div class="caption">
+						<p>
+							<hr/>
+							<text style="float: left;">Satisfaisant</text>
+							<text style="float: right;" id="field">Auditeur 1</text>
+							<br/>
+							<text style="float: left;">23/03/2016</text>
+							<text style="float: right;" id="field">Auditeur 2</text>
+							<br/>
+							<text style="float: right;" id="field">Auditeur 3</text>
+							<br/>
+							<hr/>
+							<text style="float: left;">Satisfaisant</text>
+							<text style="float: right;" id="field">Auditeur 1</text>
+							<br/>
+							<text style="float: left;">21/03/2015</text>
+							<text style="float: right;" id="field">Auditeur 2</text>
+							<br/>
+							<text style="float: right;" id="field">Auditeur 3</text>
+							<br/>
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+				<canvas id="chartOrga"></canvas>
+			</div>
+			<div class="col-md-4">
+				<canvas id="chartTreso"></canvas>
+			</div>
+			
+		</div>
+	</div>
+    
+	<div id="myModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-body">
+				<br/>
+					<p>Etes-vous sûr de vouloir supprimer cette Junior ?</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal" style="float: left;">
+						<a href="./accueil-juniors.html">Valider</a>
+					</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal" style="float: right;">Annuler</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+	<script src="../node_modules/chart.js/dist/Chart.bundle.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+	<script src="js/junior.js"></script>
+  </body>
+</html>

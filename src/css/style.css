@@ -1,1 +1,23 @@
 # Empty CSS file for your own CSS
+
+.caption {
+    text-align: justify;
+    background-color: yellow;
+}
+#button-recherche {
+	margin-left: 20px;
+}
+#title-junior {
+    color: #BA1349;
+    text-align: center;
+}
+#field {
+	color: grey;
+}
+#background {
+    background-color: #F9F9F9;
+}
+#horizontal-line{
+    padding: 0px;
+    margin: 0px;    
+}
