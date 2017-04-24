@@ -21,3 +21,25 @@
     padding: 0px;
     margin: 0px;    
 }
+#title-junior-staff {
+    background-color: #BA1349;
+	color: white;
+    text-align: center;
+}
+#checkbox {
+	margin: 10px 0;
+}
+#checktext {
+	margin-right: 20px;
+	margin-left: 4px;
+}
+#junior-a-staffer {
+    background-color: #BA1349;
+}
+.state-icon {
+    left: -5px;
+}
+.list-group-item-primary {
+    color: green;
+    background-color: #BA1349;
+}

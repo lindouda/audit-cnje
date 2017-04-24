@@ -12,50 +12,136 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/side-menu.css" rel="stylesheet">
 
   </head>
   <body>
-
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="navbar-header">
+			 
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+			</button> <a class="navbar-brand" href="#">Audit</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li>
+					<a href="./vue-generale.html">Vue Générale</a>
+				</li>
+				<li>
+					<a href="./accueil-auditeurs.html">Auditeurs</a>
+				</li>
+				<li>
+					<a href="./accueil-juniors.html">Junior</a>
+				</li>
+				<li class="dropdown">
+					 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gestion des audits<strong class="caret"></strong></a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="./relance.html">Relance</a>
+						</li>
+						<li class="active">
+							<a href="./staffing.html">Staffing</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<img height="50px" src="img/CNJE.png"/>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	
+	
     <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
-			<nav class="navbar navbar-default" role="navigation">
-				<div class="navbar-header">
-					 
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-					</button> <a class="navbar-brand" href="#">Audit</a>
+		<div class="row">
+			<div id="sidebar-wrapper" class="sidebar-toggle col-md-3">
+				<ul class="sidebar-nav">
+					<li>
+						<a href="#">ETIC INSA Technologies</a>
+					</li>
+					<li>
+						<a href="#" >Ouest INSA</a>
+					</li>
+					<li>
+						<a href="#">JIS</a>
+					</li>
+					<li>
+						<a href="#">Alsace Etude Projet</a>
+					</li>
+					<li>
+						<a href="#">AJIR</a>
+					</li>
+					<li>
+						<a href="#">IRIS INSA</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-3"></div>
+			<div class="col-md-9">
+				<div>
+					<div class="col-md-6">
+						<br>
+						<p>ETIC INSA Technologies</p>
+						<p>Sanction précédente : Satisfaisant</p>
+					</div>
+					<div class="col-md-6">
+						<br>
+						<p>Date de l'audit : 23/05/2017</p>
+						<p>Nombre d'auditeurs : 3</p>
+					</div>
 				</div>
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li>
-							<a href="./vue-generale.html">Vue Générale</a>
-						</li>
-						<li>
-							<a href="./accueil-auditeurs.html">Auditeurs</a>
-						</li>
-						<li>
-							<a href="./accueil-juniors.html">Junior</a>
-						</li>
-						<li class="dropdown">
-							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gestion des audits<strong class="caret"></strong></a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="./relance.html">Relance</a>
-								</li>
-								<li  class="active">
-									<a href="./staffing.html">Staffing</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-					<ul class="nav navbar-nav navbar-right">
-						<li>
-							<img height="50px" src="img/CNJE.png"/>
-						</li>
-					</ul>
+				<div id="checkbox">
+					<h2>Contraintes</h2>
+					<input type="checkbox" /><text id="checktext">Meme région</text>
+					<input type="checkbox" /><text id="checktext">Audit croisé</text>
+					<input type="checkbox" /><text id="checktext">2 fois de suite</text>
+					<input type="checkbox" /><text id="checktext">Tout afficher</text>
+				
+					<button type="button" class="btn btn-default" style="float: right;">
+						Rechercher
+					</button>
 				</div>
-			</nav>
+				<div class="col-md-6">
+					<h4 class="list-group-item" id="title-junior-staff">Auditeur Tréso</h4>
+					<div class="well" style="max-height: 300px;overflow: auto;">
+						<ul class="list-group checked-list-box">
+						  <li class="list-group-item" data-color="info">Cras justo odio</li>
+						  <li class="list-group-item">Dapibus ac facilisis in</li>
+						  <li class="list-group-item">Morbi leo risus</li>
+						  <li class="list-group-item">Porta ac consectetur ac</li>
+						  <li class="list-group-item">Vestibulum at eros</li>
+						  <li class="list-group-item">Cras justo odio</li>
+						  <li class="list-group-item">Dapibus ac facilisis in</li>
+						  <li class="list-group-item">Morbi leo risus</li>
+						  <li class="list-group-item">Porta ac consectetur ac</li>
+						  <li class="list-group-item">Vestibulum at eros</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h4 class="list-group-item" id="title-junior-staff">Auditeur Orga</h4>
+					<div class="well" style="max-height: 300px;overflow: auto;">
+						<ul class="list-group checked-list-box">
+						  <li class="list-group-item">Cras justo odio</li>
+						  <li class="list-group-item">Dapibus ac facilisis in</li>
+						  <li class="list-group-item">Morbi leo risus</li>
+						  <li class="list-group-item">Porta ac consectetur ac</li>
+						  <li class="list-group-item">Vestibulum at eros</li>
+						  <li class="list-group-item">Cras justo odio</li>
+						  <li class="list-group-item">Dapibus ac facilisis in</li>
+						  <li class="list-group-item">Morbi leo risus</li>
+						  <li class="list-group-item">Porta ac consectetur ac</li>
+						  <li class="list-group-item">Vestibulum at eros</li>
+						</ul>
+					</div>
+				</div>
+				<button type="button" class="btn btn-default" style="float: right;">
+					Staffer
+				</button>
+			</div>
 		</div>
 	</div>
 </div>
@@ -63,5 +149,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/list-group.js"></script>
   </body>
 </html>
