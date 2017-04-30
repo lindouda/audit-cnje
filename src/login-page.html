@@ -1,0 +1,36 @@
+<!--
+    you can substitue the span of reauth email for a input with the email and
+    include the remember me checkbox
+    -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Audit</title>
+
+	<meta name="description" content="Source code generated using layoutit.com">
+	<meta name="author" content="LayoutIt!">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/login.css" rel="stylesheet">
+
+</head>
+<body>
+	<div class="container">
+		<div class="card card-container">
+			<img id="profile-img" class="profile-img-card" src="img/CNJE.png"/>
+			<p id="profile-name" class="profile-name-card"></p>
+			<form class="form-signin">
+				<span id="reauth-email" class="reauth-email"></span>
+				<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+				<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+				<form action="./vue-generale.html">
+					<input class="btn btn-lg btn-primary btn-block btn-signin" onclick="location.href='./vue-generale.html';" type="submit" value="Connexion" />
+				</form>
+			</form><!-- /form -->
+		</div><!-- /card-container -->
+	</div><!-- /container -->
+</body>

@@ -4,6 +4,9 @@
     text-align: justify;
     background-color: yellow;
 }
+body { padding-top: 70px; }
+
+
 #button-recherche {
 	margin-left: 20px;
 }
@@ -36,10 +39,12 @@
 #junior-a-staffer {
     background-color: #BA1349;
 }
-.state-icon {
-    left: -5px;
+#table-title {
+	text-align: center;
 }
-.list-group-item-primary {
-    color: green;
-    background-color: #BA1349;
+#td-right {
+   text-align: right;   
+}
+#td-center {
+   text-align: center;   
 }
